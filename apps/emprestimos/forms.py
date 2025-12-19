@@ -12,14 +12,9 @@ class EmprestimoForm(forms.ModelForm):
         widgets = {
             'data_devolucao': forms.DateInput(
                 format=('%d/%m/%Y'),
-                attrs={'class': 'form-control',
-                       'placeholder': 'Selecione uma data',
-                       'type': 'date'  
-                       }),
+                attrs={'type': 'date', }),
+
             'data_prevista_devolucao': forms.DateInput(
                 format=('%d/%m/%Y'),
-                attrs={'class': 'form-control',
-                       'placeholder': 'Selecione uma data',
-                       'type': 'date' 
-                       }),
+                attrs={'type': 'date',}),
         }

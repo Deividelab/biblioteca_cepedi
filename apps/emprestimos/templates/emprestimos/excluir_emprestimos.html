@@ -14,16 +14,15 @@
 <body>
 <div class="card">
     <div class="card-header">
-        Tem certeza que deseja esse emprestimo abaixo?
+        Tem certeza que deseja remover o aluno abaixo?
     </div>
     <div class="card-body">
         <h5 class="card-title">Id: {{emprestimo.id}}</h5>
-        <h5 class="card-title">Emprestimo: {{emprestimo.nome}}</h5>
-        <h5 class="card-title">Matrícula: {{emprestimo.matricula}}</h5>
-        <h5 class="card-title">Matrícula: {{emprestimo.matricula}}</h5>
-        <h5 class="card-title">Matrícula: {{emprestimo.email}}</h5>
-        <h5 class="card-title">Matrícula: {{emprestimo.telefone}}</h5>
-        <h5 class="card-title">Matrícula: {{emprestimo.data_evento}}</h5>
+        <h5 class="card-title">Aluno: {{emprestimo.aluno_id}}</h5>
+        <h5 class="card-title">Livro: {{emprestimo.livro_id}}</h5>
+        <h5 class="card-title">Data da devolução: {{emprestimo.data_devolucao}}</h5>
+        <h5 class="card-title">Data prev. da Devolução: {{emprestimo.data_prevista_devolucao}}</h5>
+        <h5 class="card-title">Status: {{emprestimo.get_status_display}}</h5>
 
         <form method="post">
              {% csrf_token %}
@@ -34,3 +33,4 @@
 </div>
 </body>
 </html>
+
