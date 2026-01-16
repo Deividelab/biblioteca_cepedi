@@ -9,6 +9,7 @@ urlpatterns = [
     path('livros/', include('apps.livros.urls', namespace='livros')),
     path('emprestimos/', include('apps.emprestimos.urls', namespace='emprestimos')),
     path('editoras/', include('apps.editoras.urls', namespace='editoras')),
+    path('autores/', include('apps.autores.urls', namespace='autores')),
     path('admin/', admin.site.urls),
 ]
 

@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'apps.livros',
     'apps.emprestimos',
     'apps.editoras',
+    'apps.autores',
     'apps.core',
 ]
 

@@ -1,11 +1,12 @@
 from django.db import models
 
+from apps.autores.models import Autor
 from apps.editoras.models import Editora
 
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=100, blank=False, null=False)
-    autor = models.CharField(max_length=100, blank=False, null=False)
+    autor_id = models.ForeignKey(Autor, verbose_name='Autor',on_delete=models.CASCADE)
     edicao = models.CharField(max_length=2)
     editora = models.ForeignKey(Editora, verbose_name='Editora',on_delete=models.CASCADE)
     ano_publicacao = models.DateField(blank=False, null=False)

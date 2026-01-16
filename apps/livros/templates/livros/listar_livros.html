@@ -46,7 +46,7 @@
                             </td>
                             {#                            <td><img src="/media/{{ l.capa }}" class="img-responsive rounded-circle" height="30px" ></td>#}
                             <td><a href="{% url 'livros:detalhe_livro' l.id %}">{{ l.titulo.upper }}</a></td>
-                            <td>{{ l.autor }}</td>
+                            <td>{{ l.autor_id }}</td>
                             <td>{{ l.edicao }}</td>
                             <td>{{ l.editora }}</td>
                             <td>{{ l.ano_publicacao  | date:'d/m/Y'}}</td>
